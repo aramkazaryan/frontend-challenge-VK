@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.Content {
+  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 225px);
+  gap: 46px 48px;
+  padding: 117px 62px 10px 62px;
+  width: 100%;
+}
+.loading {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  width: fit-content;
+  margin: auto;
+}
+.tabs {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 62px;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24);
+}
+
+.tab,
+.activeTab {
+  float: left;
+  text-align: center;
+  padding: 22px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.25px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Roboto", Arial, sans-serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.activeTab {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(30, 136, 229, 1);
+}
+
+.tab:hover {
+  background: rgba(30, 136, 229, 1);
+}
