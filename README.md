@@ -1,50 +1,32 @@
-# React + TypeScript + Vite
+# Задание для Front-end стажёра
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Привет! Если ты хочешь стать частью команды Учи.ру в рамках стажёрской программы,
+то тебе необходимо выполнить небольшое тестовое задание. Это нужно, что бы твои
+потенциальные наставники смогли оценить твои навыки и сравнив их с остальными
+кандидатами выбрать лучших из лучших.
 
-Currently, two official plugins are available:
+Помни, что работающий продукт важнее количества технологий и красивого кода.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Удачи!
 
-## Expanding the ESLint configuration
+## Что нужно сделать ?
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- форкнуть этот репозитарий в свой github аккаунт
+- реализовать проект по описанию ниже
+- опубликовать его на github pages
+- прислать нам свой гитхаб аккаунт и ссылку на опубликованный сайт
+- ждать обратной связи :)
 
-- Configure the top-level `parserOptions` property like this:
+## Проект "Кошачий пинтерест"
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Необходимо реализовать интерфейс для просмотра котиков используя API https://thecatapi.com
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Дизайн лежит тут - https://bit.ly/3utxaL2
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- по умолчанию должна открываться вкладка "все котики"
+- у котика должна быть возможность добавить в "любимые" и убрать из "любимых"
+- данные о "любимых" котиках должны хранится на клиенте
+- на вкладке "любимые котики" должны отображаться добавленные в "любимые" котики
+- реализация адаптивности будет плюсом, но не обязательна
+- бесконечная прокрутка будет плюсом, но не обязательна
+- можно использовать любой фреймворк включая vanilla.js
